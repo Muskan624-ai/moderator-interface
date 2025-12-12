@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moderator Admin Panel</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Admin Panel</h2>
+            <button onclick="showUsers()">Users</button>
+            <button onclick="showPosts()">Recent Posts</button>
+        </nav>
+
+       <main class="content">
+    
+    <div class="top-header">
+        <div class="admin-profile">
+            <span class="welcome-text">Welcome, <b>Admin</b></span>
+            <div class="admin-avatar">A</div>
+        </div>
+    </div>
+
+    <h1 id="page-title">Welcome, Admin</h1>
+    
+    <div id="loading" class="hidden">Loading data...</div>
+    <div id="data-container" class="grid-view"></div>
+</main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
