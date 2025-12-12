@@ -247,4 +247,65 @@ body::before {
     font-style: italic;      /* Italic looks professional for credits */
     margin-top: 5px;         /* Little space between title and name */
     margin-bottom: 0;
+
+}
+/* --- MOBILE RESPONSIVE DESIGN --- */
+/* Applies only when screen width is 768px or smaller (Tablets & Phones) */
+@media (max-width: 768px) {
+    
+    /* 1. Stack the layout vertically */
+    body {
+        flex-direction: column;
+        height: auto; /* Allow scrolling */
+    }
+
+    .container {
+        flex-direction: column; /* Sidebar top, Content bottom */
+    }
+
+    /* 2. Transform Sidebar into a Top Header */
+    .sidebar {
+        width: 100%; /* Full width */
+        height: auto; /* Shrink height to fit buttons */
+        padding: 15px;
+        box-sizing: border-box; /* Ensures padding doesn't break width */
+        
+        /* Change shadow to point down instead of right */
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+    }
+
+    /* 3. Make buttons smaller and compact */
+    .sidebar h2 {
+        margin-bottom: 15px;
+        font-size: 1.2rem;
+    }
+    
+    .sidebar button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    /* 4. Fix Main Content spacing */
+    .content {
+        padding: 20px; /* Less padding to save screen space */
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* 5. Adjust Title and Grid */
+    #page-title {
+        font-size: 1.8rem;
+        margin-top: 10px;
+    }
+    
+    /* Make cards full width on mobile */
+    .grid-view {
+        grid-template-columns: 1fr; /* 1 column only */
+    }
+    
+    /* Fix the Welcome Admin pill position */
+    .top-header {
+        padding-top: 10px;
+        justify-content: center; /* Center it on mobile */
+    }
 }
