@@ -18,4 +18,4 @@ https://adorable-bublanina-729307.netlify.app/
     * **Compatible Colors:** High contrast orange & cream theme.
     * **Interactivity:** Hover effects, smooth transitions, and clickable user cards.
     * **Visuals:** Background pattern with transparency.
-* Can be run locally.
+
